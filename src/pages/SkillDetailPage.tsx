@@ -46,6 +46,15 @@ const SkillDetailPage = () => {
       <Header title={skill.title} showBack />
       
       <div className="px-4 py-4 max-w-lg mx-auto space-y-6">
+        {/* Hero illustration */}
+        <div className="rounded-lg overflow-hidden border border-border bg-card">
+          <img 
+            src={skill.image} 
+            alt={`${skill.title} illustration`}
+            className="w-full h-auto object-contain"
+          />
+        </div>
+
         {/* Overview */}
         <div className="space-y-3">
           <p className="text-muted-foreground">{skill.description}</p>
