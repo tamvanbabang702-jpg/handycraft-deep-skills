@@ -1,3 +1,11 @@
+// Skill illustrations
+import basicToolsImg from '@/assets/skills/basic-tools.png';
+import measuringMarkingImg from '@/assets/skills/measuring-marking.png';
+import cuttingSawingImg from '@/assets/skills/cutting-sawing.png';
+import joiningTechniquesImg from '@/assets/skills/joining-techniques.png';
+import finishingSandingImg from '@/assets/skills/finishing-sanding.png';
+import emergencyRepairsImg from '@/assets/skills/emergency-repairs.png';
+
 export interface SkillStep {
   id: string;
   title: string;
@@ -11,6 +19,7 @@ export interface Skill {
   title: string;
   description: string;
   icon: string;
+  image: string;
   difficulty: 'beginner' | 'intermediate' | 'advanced';
   timeEstimate: string;
   materials: string[];
@@ -24,6 +33,7 @@ export const skills: Skill[] = [
     title: 'Basic Tools & Their Use',
     description: 'Learn to identify and safely use essential carpentry hand tools.',
     icon: 'Wrench',
+    image: basicToolsImg,
     difficulty: 'beginner',
     timeEstimate: '30 min',
     materials: ['Hammer', 'Screwdrivers (flat & Phillips)', 'Tape measure', 'Pencil', 'Level', 'Handsaw'],
@@ -70,6 +80,7 @@ export const skills: Skill[] = [
     title: 'Measuring & Marking',
     description: 'Master precise measurements - the foundation of all carpentry.',
     icon: 'Ruler',
+    image: measuringMarkingImg,
     difficulty: 'beginner',
     timeEstimate: '20 min',
     materials: ['Tape measure', 'Pencil', 'Square', 'Marking gauge'],
@@ -106,6 +117,7 @@ export const skills: Skill[] = [
     title: 'Cutting & Sawing',
     description: 'Learn safe and effective cutting techniques for wood.',
     icon: 'Scissors',
+    image: cuttingSawingImg,
     difficulty: 'beginner',
     timeEstimate: '45 min',
     materials: ['Handsaw', 'Workbench or sawhorses', 'Clamps', 'Safety glasses', 'Pencil'],
@@ -151,6 +163,7 @@ export const skills: Skill[] = [
     title: 'Joining Techniques',
     description: 'Connect pieces of wood securely using nails, screws, and basic joints.',
     icon: 'Link',
+    image: joiningTechniquesImg,
     difficulty: 'intermediate',
     timeEstimate: '60 min',
     materials: ['Nails (various sizes)', 'Screws', 'Hammer', 'Screwdriver or drill', 'Wood glue', 'Clamps'],
@@ -195,6 +208,7 @@ export const skills: Skill[] = [
     title: 'Finishing & Sanding',
     description: 'Smooth and protect your work for a professional result.',
     icon: 'Sparkles',
+    image: finishingSandingImg,
     difficulty: 'beginner',
     timeEstimate: '30 min',
     materials: ['Sandpaper (80, 120, 220 grit)', 'Sanding block', 'Dust mask', 'Tack cloth', 'Finish (oil, wax, or varnish)'],
@@ -239,6 +253,7 @@ export const skills: Skill[] = [
     title: 'Emergency Repairs',
     description: 'Quick fixes for doors, furniture, and small structures.',
     icon: 'AlertTriangle',
+    image: emergencyRepairsImg,
     difficulty: 'intermediate',
     timeEstimate: '15-60 min',
     materials: ['Hammer', 'Screwdriver', 'Wood glue', 'Clamps', 'Wood filler', 'Sandpaper'],

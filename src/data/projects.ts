@@ -1,3 +1,9 @@
+// Project illustrations
+import storageShelfImg from '@/assets/projects/storage-shelf.png';
+import basicWorkbenchImg from '@/assets/projects/basic-workbench.png';
+import storageCrateImg from '@/assets/projects/storage-crate.png';
+import emergencyShelterImg from '@/assets/projects/emergency-shelter.png';
+
 export interface ProjectStep {
   id: string;
   title: string;
@@ -11,6 +17,7 @@ export interface Project {
   title: string;
   description: string;
   icon: string;
+  image: string;
   difficulty: 'beginner' | 'intermediate' | 'advanced';
   timeEstimate: string;
   materials: string[];
@@ -26,6 +33,7 @@ export const projects: Project[] = [
     title: 'Simple Storage Shelf',
     description: 'A sturdy wall-mounted shelf for storage. Great first project.',
     icon: 'Archive',
+    image: storageShelfImg,
     difficulty: 'beginner',
     timeEstimate: '2-3 hours',
     materials: [
@@ -87,6 +95,7 @@ export const projects: Project[] = [
     title: 'Basic Workbench',
     description: 'A sturdy, simple workbench for your projects. Essential for any workspace.',
     icon: 'Table',
+    image: basicWorkbenchImg,
     difficulty: 'intermediate',
     timeEstimate: '4-6 hours',
     materials: [
@@ -148,6 +157,7 @@ export const projects: Project[] = [
     title: 'Storage Crate',
     description: 'Versatile wooden crate for storage, moving, or as furniture.',
     icon: 'Package',
+    image: storageCrateImg,
     difficulty: 'beginner',
     timeEstimate: '2 hours',
     materials: [
@@ -201,6 +211,7 @@ export const projects: Project[] = [
     title: 'Temporary Shelter Frame',
     description: 'A basic A-frame shelter structure for emergency situations.',
     icon: 'Home',
+    image: emergencyShelterImg,
     difficulty: 'intermediate',
     timeEstimate: '3-4 hours',
     materials: [

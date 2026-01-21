@@ -46,6 +46,15 @@ const ProjectDetailPage = () => {
       <Header title={project.title} showBack />
       
       <div className="px-4 py-4 max-w-lg mx-auto space-y-6">
+        {/* Hero illustration */}
+        <div className="rounded-lg overflow-hidden border border-border bg-card">
+          <img 
+            src={project.image} 
+            alt={`${project.title} illustration`}
+            className="w-full h-auto object-contain"
+          />
+        </div>
+
         {/* Overview */}
         <div className="space-y-3">
           <p className="text-muted-foreground">{project.description}</p>
